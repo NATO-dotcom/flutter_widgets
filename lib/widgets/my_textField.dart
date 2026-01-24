@@ -14,14 +14,21 @@ class MyTextfield extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      
       controller: controller,
       obscureText: obsecureText,
       decoration: InputDecoration(
         hintText: hintText,
+       
         enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Colors.white)
+          borderSide: BorderSide(color: Colors.grey.shade400),
+          borderRadius: BorderRadius.circular(12)
         ),
-        focusedBorder: OutlineInputBorder(borderSide: BorderSide(color: Colors.grey.shade300)),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.grey.shade700),
+                    borderRadius: BorderRadius.circular(12)
+
+          ),
         fillColor: Colors.white10,
         filled: true
       )
